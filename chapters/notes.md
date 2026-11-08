@@ -4,6 +4,7 @@
 
 ## MAC Environment:
 
+- **default:** 192.168.64.1
 - **IP:** 192.168.64.18
 
 ## Commands used to investigate the machine (RedHat Linux 9.8 (Plow))
@@ -60,3 +61,23 @@ grep -E '^(Name|Pid|VmSize|VmRSS):' /proc/$P2/status
 ```bash
 vmstat 1 5
 ```
+
+## Basic Network Configuration
+
+### **Persistent network configuration**: what NetworkManager applies when the system connects.
+
+```bash
+/etc/NetworkManager/system-connections/
+```
+
+### Basic Network Commands to T/S
+
+| Purpose                            | Command                          |
+| ---------------------------------- | -------------------------------- |
+| Show IPv4 addresses                | `ip -4 addr`                     |
+| Show interfaces                    | `ip link`                        |
+| Show NetworkManager profiles       | `nmcli connection show`          |
+| Show active connections            | `nmcli connection show --active` |
+| Show DNS configuration             | `cat /etc/resolv.conf`           |
+| Show default gateway               | `ip route`                       |
+| Show detailed device configuration | `nmcli device show`              |
