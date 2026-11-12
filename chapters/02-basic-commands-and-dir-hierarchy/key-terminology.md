@@ -1,19 +1,21 @@
 ## Streams
 
-1. Standard Input (*stdin*)
-e.g. A terminal
+1. Standard Input (_stdin_)
+   e.g. A terminal
 
-2. Standard Output (*stdout*)
-e.g. A *text* file/terminal
+2. Standard Output (_stdout_)
+   e.g. A _text_ file/terminal
 
-3. Standard Error (*stderr*)
-e.g A *text* file
+3. Standard Error (_stderr_)
+   e.g A _text_ file
 
-### **~**: a tilde /*ˈtɪldə*/ - the abbreviation for a **home dir**
+### **~**: a tilde /_ˈtɪldə_/ - the abbreviation for a **home dir**
 
-### **Expansion**: turning a placeholder / special expression into ist value. 
-*Near-synonyms*: 
-- Substitution, 
+### **Expansion**: turning a placeholder / special expression into ist value.
+
+_Near-synonyms_:
+
+- Substitution,
 - Replacement,
 - **Unfolding**;
 
@@ -21,11 +23,7 @@ e.g A *text* file
  echo Des*
 ```
 
-```bash 
-* ```: tells the shell to match **any number** of *arbitrary characters*.
+- `*` — tells the shell to match **zero or more** arbitrary characters.
+- `?` — instructs the shell to match **exactly one** arbitrary character.
 
-```bash 
-? 
-```: instructs the shell to match **exactly one** *arbitrary character*.
-
-**NOTE**: The shell (*first*) performs expansions **before** running commands, and only then.
+**NOTE:** The shell performs expansions (_first_) before running commands.
